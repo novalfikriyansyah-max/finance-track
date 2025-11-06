@@ -6,7 +6,7 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const res = await fetch("https://your-backend.onrender.com/api/auth/login", {
+    const res = await fetch("https://finance-track-pleg.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
